@@ -1,0 +1,17 @@
+name: CI-CD
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  CI:
+    runruns-on: ununtu-latest
+    stesteps:
+      - name: Build da apk
+        run: flutter build apk
+  CD:
+    runruns-on: ununtu-latest
+    stesteps:
+      - name: Continuação
+        run: echo "Ok"
